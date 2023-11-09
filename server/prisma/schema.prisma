@@ -18,3 +18,10 @@ model lu_user {
   phone_number String?
   password     String  @db.VarChar(255)
 }
+
+model foodDetails {
+  id Int @id @unique
+  name String?
+  restrauntName String?
+  Price Decimal?
+}
